@@ -22,14 +22,4 @@ publishing {
             from components.java
         }
     }
-    repositories {
-        maven {
-            name = "nexus"
-            url = uri("http://52.23.58.40:8081/repository/gradle-test/")
-            credentials {
-                username = findProperty("nexusUsername") ?: "admin"
-                password = findProperty("nexusPassword") ?: "123456"
-            }
-        }
-    }
 }
