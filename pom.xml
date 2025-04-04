@@ -62,6 +62,19 @@
     </dependency>
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>maven-test</id>
+      <url>http://52.23.58.40:8081/repository/maven-test</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <build>
     <pluginManagement>
       <plugins>
